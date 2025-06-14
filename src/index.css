@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#root{
+  height: 100%;
+  width: 100%;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+:root{
+  background-color: rgb(23, 23, 34);
+  font-family: "Inter";
+}
+
+.die{
+  width:40px;
+  height:40px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  font-weight:bold;
+  font-family: "Inter";
+  font-size: 1.2rem;
+  box-shadow:0 2px rgba(0, 0, 0, 0.145);
+  border: none;
+  cursor: pointer;
+  margin: auto;
+}
+
+.die-container{
+  display: grid;
+  grid-template-columns: repeat(5,60px);
+  gap: 10px;
+}
+
+.roll-die-button{
+  background-color: rgb(41, 59, 221);
+  color: white;
+  border: none;
+  padding:10px 25px;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.held{
+  background-color: rgb(111, 233, 158);
+}
+
+.title{
+  font-size: 40px;
+  margin: 0;
+}
+
+.instructions{
+  margin-top: 0;
+  text-align:center;
+  font-weight: 500;
+}
+
+.sr-only{
+  position: absolute;
+  width: 1px;
+  padding: 0;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  white-space: nowrap;
+  clip:rect(0,0,0,0);
+  border: 0;
+}
+
+.timer,.time,.roll,.roll-container{
+  margin: 0;
+  text-align: center;
+}
+
+.time,.roll{
+  font-weight: 500;
+}
+
+.roll-timer-container{
+  display: flex;
+  gap: 20px;
+}
